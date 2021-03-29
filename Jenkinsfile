@@ -8,13 +8,13 @@ pipeline {
   stages {
     stage(‘CloneGit’) {
       steps {
-        git ‘https://github.com/JaneRands/AchiStarTechApp.git'
+        git 'https://github.com/JaneRands/AchiStarTechApp.git'
       }
     }
     stage(‘BuildImage’) {
       steps{
         script {
-          dockerImage = docker.build registry + “:$BUILD_NUMBER”
+          dockerImage = docker.build registry + ":${env.BUILD_NUMBER}"
         }
       }
     }
