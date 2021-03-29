@@ -1,4 +1,4 @@
-#!groovy
+#!/usr/bin/env groovy
 pipeline {
   environment {
     registry = “janerands/achistar”
