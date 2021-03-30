@@ -1,9 +1,8 @@
-#!groovy
 pipeline {
   environment {
-    registry = “janerands/achistar”
-    registryCredential = ‘DockerCred’
-    dockerImage = ‘’
+    registry = 'janerands/achistar'
+    registryCredential = 'DockerCred'
+    dockerImage = ''
   }
   agent any
   stages {
